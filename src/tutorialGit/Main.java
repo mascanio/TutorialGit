@@ -13,9 +13,13 @@ public class Main {
 		System.out.println("Introduzca el divisor: ");
 		b = sc.nextInt();
 
-		c = a / b;
-		System.out.println("Resultado = " + c);
-
+		if (b != 0) {
+			c = a / b;
+			System.out.println("Resultado = " + c);
+		} else {
+			System.out.println("Error, división por 0");
+		}
+		
 		sc.close();
 	}
 
